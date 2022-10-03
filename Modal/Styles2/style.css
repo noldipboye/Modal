@@ -1,0 +1,89 @@
+.Modal {
+  -o-object-position: center;
+     object-position: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.Modal-Body {
+  width: 800px;
+  height: 400px;
+  background-color: #FAF9F6;
+  border-radius: 25px;
+}
+
+.Modal-Title {
+  padding-top: 1px;
+  padding-left: 40px;
+  color: #003566;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.Modal-Text {
+  padding-left: 55px;
+  color: #2C6A73;
+}
+
+.Buttons {
+  justify-content: right;
+  display: flex;
+  padding-top: 200px;
+  padding-right: 60px;
+}
+
+.Accept:hover {
+  background-color: #23995a;
+  cursor: pointer;
+}
+
+.Decline:hover {
+  background-color: #5c1111;
+  cursor: pointer;
+}
+
+.Accept {
+  background-color: #34D27D;
+  width: 110px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  display: flex;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.Decline {
+  background-color: #971C1C;
+  width: 110px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  display: flex;
+  border-radius: 10px;
+  color: #fff;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .Modal-Text {
+    padding-left: 30px;
+    padding-right: 20px;
+    color: #2C6A73;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .Buttons {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    padding-top: 200px;
+    padding-left: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,112 @@
+$white: #fff;
+$Off-White: #FAF9F6;
+$Light-Blue: #C5D6E5;
+$Pacific-Blue: #24A3B5;
+$Dark-Green: #2C6A73;
+$Purple: #4E3DB8;
+$Darker-Purple: #3E3193;
+$Navy-Blue: #003566;
+$Black: #000000;
+$Light-Green: #34D27D;
+$Dark-Red:#971C1C;
+$Border-Radius-1: 25px;
+$Border-Radius-2: 10px;
+$Font-1: 'Times New Roman';
+
+.Modal {
+    object-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.Modal-Body {
+    width: 800px;
+    height: 400px;
+    background-color: $Off-White;
+    border-radius: $Border-Radius-1;
+}
+
+.Modal-Title {
+    padding-top: 1px;
+    padding-left: 40px;
+    color: $Navy-Blue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Modal-Text {
+    padding-left: 55px;
+    color:$Dark-Green;
+    
+}
+
+.Buttons {
+    justify-content: right;
+    display: flex;
+    padding-top: 200px;
+    padding-right: 60px;
+}
+
+.Accept:hover {
+    background-color: #23995a;
+    cursor: pointer;
+}
+
+.Decline:hover {
+    background-color: #5c1111;
+    cursor: pointer;
+}
+
+
+.Accept {
+    background-color: $Light-Green;
+    width: 110px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    display: flex;
+    border-radius: $Border-Radius-2;
+    color: $white;
+}
+
+.Decline {
+    background-color: $Dark-Red;
+    width: 110px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    display: flex;
+    border-radius: $Border-Radius-2;
+    color: $white;
+    margin-left:10px;
+}
+
+
+
+@media only screen and (max-width:700px) {
+    .Modal-Text {
+        padding-left: 30px;
+        padding-right:20px;
+        color:$Dark-Green;
+    }
+
+
+}
+
+@media only screen and (max-width:475px) {
+    .Buttons {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: relative;
+        padding-top: 200px;
+        padding-left: 50px;
+    }
+
+    
+}
