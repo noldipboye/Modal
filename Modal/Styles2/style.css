@@ -12,6 +12,7 @@
   height: 400px;
   background-color: #FAF9F6;
   border-radius: 25px;
+  display: none;
 }
 
 .Modal-Title {
@@ -27,10 +28,12 @@
 }
 
 .Buttons {
-  justify-content: right;
+  -o-object-position: center;
+     object-position: center;
+  justify-content: center;
+  align-items: center;
   display: flex;
-  padding-top: 200px;
-  padding-right: 60px;
+  position: relative;
 }
 
 .Accept:hover {
@@ -46,12 +49,8 @@
 .Accept {
   background-color: #34D27D;
   width: 110px;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  position: relative;
-  display: flex;
+  height: 58px;
+  text-align: center;
   border-radius: 10px;
   color: #fff;
 }
@@ -59,31 +58,66 @@
 .Decline {
   background-color: #971C1C;
   width: 110px;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  position: relative;
-  display: flex;
+  height: 58px;
+  text-align: center;
+  display: none;
   border-radius: 10px;
   color: #fff;
-  margin-left: 10px;
+  margin-top: -75px;
 }
 
 @media only screen and (max-width: 700px) {
   .Modal-Text {
-    padding-left: 30px;
-    padding-right: 20px;
+    padding-right: 50px;
     color: #2C6A73;
-  }
-}
-@media only screen and (max-width: 475px) {
-  .Buttons {
+    -o-object-position: center;
+       object-position: center;
     justify-content: center;
     align-items: center;
     display: flex;
     position: relative;
-    padding-top: 200px;
-    padding-left: 50px;
+    text-align: center;
+  }
+  .Buttons {
+    padding-right: none;
+    -o-object-position: center;
+       object-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    text-align: center;
+  }
+  .Modal-Title {
+    padding-right: 50px;
+    -o-object-position: center;
+       object-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  .Accept {
+    width: 74px;
+    text-align: center;
+    font-size: 15px;
+    height: 54px;
+  }
+  .Decline {
+    width: 74px;
+    text-align: center;
+    font-size: 15px;
+    height: 54px;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .Buttons {
+    padding-right: none;
+    -o-object-position: center;
+       object-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
   }
 }/*# sourceMappingURL=style.css.map */
